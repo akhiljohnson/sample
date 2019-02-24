@@ -4,20 +4,48 @@
 <head>
 	<meta charset="utf-8">
 	<title>Teansparent Login Form</title>
-	<link rel="stylesheet" href="style.css">
+	<style>
+		.btn {
+			border: 2px solid #333;
+			text-decoration: none;
+			color: #fff;
+			background-color: #333
+		}
+	</style>
+	<script>
+		function loginPage() {
+			if(document.getElementById("usrid").value != "") {
+				if(document.getElementById("pwd").value != "") {
+					return true;
+				}
+				else {
+					return false;
+				}
+
+			} else {
+					return false;
+				}
+		}
+	</script>
 </head>
 <body>
 <div class="login-box">
 	<h1>AJ Login</h1>
 	<div class="textbox">
-		<input type="text"placeholder="username"name=""value="">
+		<input id="usrid" type="text"placeholder="username"name=""value="">
 	</div>
 
 <div class="textbox">
-<input type="password" placeholder="password" name="" value="">
+<input id="pwd" type="password" placeholder="password" name="" value="">
 </div>
-<input class="btn" type="button" name="" value="sign in">
+<a id="signIn" onclick="return loginPage()" class="btn" href="navbar.html" type="button">sign in</a>
+
+<a class="btn" type="button">Register</a>
+
+
+
+
+
 </div>
 </body>
 </html>
-	
