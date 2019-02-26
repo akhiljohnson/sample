@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Teansparent Login Form</title>
+	<style>
+		.btn {
+			border: 2px solid #333;
+			text-decoration: none;
+			color: #fff;
+			background-color: #333
+		}
+	</style>
+	<script>
+		function loginPage() {
+			if(document.getElementById("usrid").value == "Akhil") {
+				if(document.getElementById("pwd").value == "Johnson") {
+					return true;
+				}
+				else {
+					return false;
+				}
+			} else {
+					return false;
+				}
+		}
+	</script>
+</head>
+<body>
+<div class="login-box">
+	<h1>AJ Login</h1>
+	<div class="textbox">
+		<input id="usrid" type="text"placeholder="username"name=""value="">
+	</div>
+
+	<div class="textbox">
+	<input id="pwd" type="password" placeholder="password" name="" value="">
+	</div>
+	<button onclick="myFunction()">sign in</button"class="btn" href="navbar4.html" type="button">
+												
+	<button onclick="myFunction()">Register</button>
+
+
+
+
+
+
+</div>
+</body>
+</html>
