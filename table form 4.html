@@ -12,6 +12,18 @@
 		}
 	</style>
 	<script>
+		
+						function myFunction() {
+ 					 var txt;
+  						var person = prompt("Please enter your usrid and pwd:", "username,password");
+  					if (person == null || person == "") {
+   				 txt = "User cancelled the prompt.";
+  					} else {
+   					 
+  					}
+				  document.getElementById("demo").innerHTML = txt;
+					}
+
 		function loginPage() {
 			if(document.getElementById("usrid").value == "Akhil") {
 				if(document.getElementById("pwd").value == "Johnson") {
